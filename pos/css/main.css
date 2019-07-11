@@ -1,0 +1,281 @@
+body {
+	background: #ddd;
+}
+.main-wrapper {
+	margin: 40px 0;
+}
+
+.search-content {
+	background: #fff;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.search-content .form-control {
+	padding-bottom: 0.6rem;
+}
+
+.common-box {
+	background: #fff;
+	padding: 20px;
+}
+
+
+.border-title {
+	border-bottom: 1px solid #4a4a4a;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+}
+
+.product-list {
+	margin-bottom: 30px;
+}
+
+.product-list .flex-wrap {
+	flex-wrap: nowrap !important;
+}
+
+.product-list  .btn-dark {
+	float: right;
+}
+
+.mtb {
+	margin: 5px 0;
+}
+
+hr {
+	border-color: #4a4a4a;
+}
+
+.new-item-list {
+	margin-bottom: 20px;
+}
+
+.new-item-list .card {
+	margin-bottom: 20px;
+}
+
+.table-bordered td, .table-bordered th {
+	text-align: center;
+}
+
+.scrollbar {
+	margin-top: 15px;
+	margin-right: 0;
+	float: left;
+	height: 300px;
+	overflow-y: scroll;
+}
+
+.scrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 14px;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number,
+input#number2 {
+  text-align: center;
+  border: none;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  padding: 6px 4px 9px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.detail-table {
+	margin: 0;
+}
+
+
+.detail-table .delete-items {
+	color: #f44242;
+	margin: 0 5px;
+	float: left;
+	font-size: 14px;
+}
+
+.discount {
+	width: 40px;
+	height: 20px;
+	text-align: center;
+}
+
+.total-table {
+	margin: 100px 0 40px;
+}
+
+.total-table .text-bold {
+	font-weight: bold;
+}
+
+.order-btn {
+	flex-wrap: nowrap !important;
+	text-align: center;
+}
+
+.flex-wrap {
+	flex-wrap: nowrap !important;
+}
+
+.order-btn .btn {
+	font-size: 14px;
+}
+
+.h-100 {
+	height: 100%;
+}
+/* Slider */
+@media (min-width: 768px) {
+	/* show 3 items */
+	.carousel-inner .active,
+	.carousel-inner .active + .carousel-item,
+	.carousel-inner .active + .carousel-item + .carousel-item {
+		display: block;
+	}
+
+	.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+	.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+	.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+		transition: none;
+	}
+
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		position: relative;
+		transform: translate3d(0, 0, 0);
+	}
+
+	.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+		position: absolute;
+		top: 0;
+		right: -33.3333%;
+		z-index: -1;
+		display: block;
+		visibility: visible;
+	}
+
+	/* left or forward direction */
+	.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+	.carousel-item-next.carousel-item-left + .carousel-item,
+	.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+	.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+		position: relative;
+		transform: translate3d(-100%, 0, 0);
+		visibility: visible;
+	}
+
+	/* farthest right hidden item must be abso position for animations */
+	.carousel-inner .carousel-item-prev.carousel-item-right {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		display: block;
+		visibility: visible;
+	}
+
+	/* right or prev direction */
+	.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+	.carousel-item-prev.carousel-item-right + .carousel-item,
+	.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+	.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+		position: relative;
+		transform: translate3d(100%, 0, 0);
+		visibility: visible;
+		display: block;
+		visibility: visible;
+	}
+
+	.carousel-control-next, 
+	.carousel-control-prev {
+		opacity: 1;
+		width: auto;
+		color: #4a4a4a;
+	}
+
+	.carousel {
+		padding: 15px 10px;
+	}
+}
+
+.carousel-control-next .fa, 
+.carousel-control-prev .fa {
+	font-size: 24px;
+}
+
+.carousel-control-next:hover .fa, 
+.carousel-control-prev:hover .fa,
+.carousel-control-next:focus .fa, 
+.carousel-control-prev:focus .fa {
+	font-size: 24px;
+	color: #4a4a4a;
+	opacity: 1;
+}
+
+
+@media (min-width: 992px) {
+	.carousel-item {
+		margin-right: 0;
+	}
+}
